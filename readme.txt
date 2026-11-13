@@ -95,6 +95,28 @@ Git method for a new, empty repository
      If images are missing, check that assets/ was uploaded with
      the original folder and file names.
 
+If the page opens but animations or images are missing
+
+  Open the production branch in GitHub and confirm these exact paths:
+
+    vendor/gsap.js
+    vendor/gsap-scroll-trigger.js
+    assets/projects/generative-study.webp
+    assets/fonts/hanken.woff2
+    assets/Aniket-Chauhan-Resume.pdf
+
+  If these paths are missing, open Add file > Upload files at the
+  repository root. Drag the assets and vendor folders themselves from
+  Final_web into the browser. The upload list should show paths such as
+  vendor/gsap.js, with the folder name included. Commit or merge into main.
+  If the browser upload does not preserve the folders, clone your
+  existing repository with GitHub Desktop, then copy assets and vendor
+  into the cloned folder beside index.html. Commit and push to main.
+
+  Wait for Vercel to show the new deployment as Ready. Open the deployed
+  site's /vendor/gsap.js URL. It should show JavaScript instead of a 404.
+  Then refresh the homepage and scroll through Work and Process.
+
 5. PUBLISH LATER EDITS
 ----------------------
 After testing locally, upload the changed files to the same paths in
