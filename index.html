@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aniket Chauhan, graphic designer, 3D artist, cinematographer and AI creator based in Dombivli, Mumbai.">
+  <meta name="theme-color" content="#101012">
+  <title>Aniket Chauhan, Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101012'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23ff005d'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/gsap.js"></script>
+  <script defer src="vendor/gsap-scroll-trigger.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="motion.js"></script>
+</head>
+<body>
+  <div class="intro-overlay" hidden aria-hidden="true"><div class="intro-orb"><b>Aniket<span>.</span></b></div></div>
+  <a class="skip-link" href="#work">Skip to selected work</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="wordmark" href="#top" aria-label="Aniket, home">aniket<span>.</span></a>
+      <div class="nav-links">
+        <a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="circle theme-button" type="button" aria-label="Switch to light mode">
+          <svg class="sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M4.93 4.93l2.12 2.12m9.9 9.9 2.12 2.12m0-14.14-2.12 2.12m-9.9 9.9-2.12 2.12"/></svg>
+          <svg class="moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M21 14.1A9 9 0 0 1 9.9 3a9 9 0 1 0 11.1 11.1Z"/></svg>
+        </button>
+        <a class="pill nav-hello" href="#contact">Say hello</a>
+        <button class="circle menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas class="hero-pixels" aria-hidden="true"></canvas>
+      <div class="design-art" aria-hidden="true">
+        <div class="studio-art studio-left">
+          <figure class="studio-panel print-art">
+            <figcaption><b>Graphic design</b><span>Print layout</span></figcaption>
+            <div class="print-spread">
+              <div class="print-poster"><small>TYPE STUDY</small><b>Form<span>&amp;</span>Field</b></div>
+              <div class="print-book"><div><b>SHYFTX</b><img src="assets/projects/shyftx.webp" alt=""></div><div><span></span><span></span><span></span><span></span></div></div>
+            </div>
+          </figure>
+          <figure class="studio-panel render-art">
+            <figcaption><b>3D &amp; architecture</b><span>Wireframe / render</span></figcaption>
+            <div class="studio-frame">
+              <img src="assets/projects/showreel.webp" alt="">
+              <div class="render-mesh"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </figure>
+        </div>
+        <div class="studio-art studio-right">
+          <figure class="studio-panel film-art">
+            <figcaption><b>Cinematography</b><span>Shot / edit</span></figcaption>
+            <div class="studio-frame film-frame"><img src="assets/projects/skywards.webp" alt=""><span class="viewfinder"></span><span class="recording">● REC</span></div>
+            <div class="film-timeline"><div><i></i><i></i><i></i><i></i></div><div><i></i><i></i><i></i></div><span class="film-playhead"></span></div>
+          </figure>
+          <figure class="studio-panel variation-art">
+            <figcaption><b>AI creation</b><span>Variation study</span></figcaption>
+            <div class="variation-grid"><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div></div>
+          </figure>
+        </div>
+        <div class="design-note note-one"><b>Graphic designer</b><span>Try a tighter layout.</span></div>
+        <div class="design-note note-two"><b>Motion designer</b><span>Adjust the timing on this shot.</span></div>
+        <div class="design-note note-three"><b>3D artist</b><span>Checking light and texture.</span></div>
+        <div class="design-note note-four"><b>AI creator</b><span>Exploring another variation.</span></div>
+        <div class="design-note note-five"><b>Video editor</b><span>The latest cut is ready.</span></div>
+        <div class="design-note note-six"><b>Cinematographer</b></div>
+      </div>
+      <div class="hero-content">
+        <button class="layer-toggle" type="button" role="switch" aria-checked="true">Design layer <span class="switch" aria-hidden="true"></span></button>
+        <div class="selection" title="Drag to move. Double-click to reset.">
+          <h1 id="hero-title" aria-label="Aniket Chauhan"><span class="hero-name" aria-hidden="true"><span class="glyph">A</span><span class="glyph">n</span><span class="glyph">i</span><span class="glyph">k</span><span class="glyph">e</span><span class="glyph">t</span></span><span class="hero-dot" aria-hidden="true">.</span></h1>
+          <span class="handles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="selection-caption" aria-hidden="true">Design · Motion · 3D</span>
+          <div class="glyph-inspector" aria-hidden="true" hidden><svg overflow="visible"><text></text></svg><small></small><i></i><i></i><i></i><i></i></div>
+        </div>
+        <p class="hero-lede">I’m a <strong>graphic designer, 3D artist, cinematographer and AI creator</strong> based in Dombivli, Mumbai. I make brand visuals, films and immersive experiences for architecture.</p>
+        <div class="actions hero-actions"><a class="pill primary" href="#work">See selected work <span aria-hidden="true">→</span></a><a class="pill secondary" href="#contact">Let’s talk</a></div>
+      </div>
+    </section>
+
+    <div class="work-sequence">
+      <span id="work" class="scene-anchor" aria-hidden="true"></span>
+      <div class="work-pin">
+        <div class="work-track">
+          <section class="statement" aria-label="How I think">
+            <svg class="statement-drawing drawing-wireframe" viewBox="0 0 260 180" fill="none" aria-hidden="true">
+              <path class="ink-path" d="M32 42H225V161H32V42H225M32 70H225M49 92H145M49 110H115M49 128H111M49 140H96V153H49ZM162 87H209V140H162Z"/>
+              <g class="drawing-tool" transform="translate(32 42)"><path d="M0 0 2-14 42-73 54-65 14-6ZM2-14l12 8m24-60 12 8m-8-15 12 8"/></g>
+            </svg>
+            <p>Design, motion and 3D give me different ways to tell a story.<br> I use the one that fits the <em>idea.</em></p>
+            <svg class="statement-drawing drawing-freehand" viewBox="0 0 250 160" fill="none" aria-hidden="true">
+              <path class="ink-path" d="M22 55C46-22 46 25 39 62S57 36 66 48 69 95 82 60 93 28 95 64 109 31 114 48 114 75 127 59 133 32 144 40 155 60 172 51M24 92Q41 68 55 96T82 92 109 95 139 91M36 130Q99 120 165 131"/>
+              <g class="drawing-tool" transform="translate(22 55)"><path d="M0 0 3-17 12-23 39-66q8-10 16-3t1 15L29-9 16-4ZM12-23l17 14m23-52 7 4-16 26"/></g>
+            </svg>
+          </section>
+
+          <section class="work section-width" aria-labelledby="work-title">
+            <div class="section-head"><h2 id="work-title">Selected work</h2><p>From a motion identity to an expense tracker. A selection of projects across design, animation and 3D.</p></div>
+            <div class="folder-hint">Hover a folder to peek inside. Click to open the project.</div>
+            <div class="folder-tray" id="folder-tray">
+              <svg class="tray-outline" viewBox="0 0 1200 580" preserveAspectRatio="none" fill="none" aria-hidden="true"><path d="M2 550 111 2H1089L1198 550V579H2Z M2 550H1198 M74 185H1126 M111 2V185L2 550 M1089 2V185L1198 550" vector-effect="non-scaling-stroke"/></svg>
+              <div class="folders" id="folders"></div>
+              <div class="tray-front" aria-hidden="true"><i></i><span>Selected work <b>/ 06 files</b></span></div>
+              <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-title">
+                <div class="project-sheet">
+                  <span class="paperclip" aria-hidden="true"></span>
+                  <button class="circle close-project" type="button" aria-label="Close project">×</button>
+                  <div class="project-visual" id="project-visual"></div>
+                  <div class="project-copy">
+                    <h2 id="project-title"></h2><p id="project-description"></p>
+                    <div class="project-highlights" id="project-highlights"></div>
+                    <div class="tags project-tags" id="project-tags"></div>
+                    <a class="pill primary" id="project-link" target="_blank" rel="noopener"></a>
+                    <div class="project-nav"><button class="pill secondary" id="project-back" type="button">← Previous</button><button class="pill secondary" id="project-next" type="button">Next →</button></div>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <noscript><p>Selected projects include Shred, my 3D showreel, Money Flow, Arcos, work at ShyftX and Skywards.</p></noscript>
+          </section>
+        </div>
+      </div>
+      <div class="work-space" aria-hidden="true"></div>
+    </div>
+
+    <section class="process" aria-labelledby="process-title">
+      <div class="process-run">
+        <span id="process" class="scene-anchor" aria-hidden="true"></span>
+        <div class="process-pin">
+          <div class="process-track">
+            <div class="process-intro">
+              <canvas class="process-lights" aria-hidden="true"></canvas>
+              <h2 id="process-title">How I<br> make things</h2>
+              <p>From the first brief to the final frame. Scroll to follow the workflow.</p>
+              <span class="process-arrow" aria-hidden="true">⟵</span>
+            </div>
+            <div class="workflow-panel">
+              <div class="workflow">
+                <div class="flow-window">
+                  <div class="flow-bar"><span><b></b> process.flow</span><span>aniket / workflow</span><button id="flow-light" type="button" aria-pressed="false" aria-label="Switch workflow to plain light">100%</button></div>
+                  <div class="flow-body">
+                    <aside class="flow-tools" aria-label="Workflow tools">
+                      <div class="flow-tools-title"><span>Tools <b>15</b></span><button type="button" class="flow-tools-toggle" aria-controls="workflow-tools-list" aria-expanded="false">Show tools</button></div>
+                      <ul id="workflow-tools-list" tabindex="0" aria-label="Software used in the workflow">
+                        <li data-use="2"><img src="assets/tools/Adobe_Illustrator_CC_icon.svg" alt=""><span><b>Illustrator</b><small>Brand and graphics</small></span></li>
+                        <li data-use="2,3"><img src="assets/tools/Adobe_Photoshop_CC_icon.svg" alt=""><span><b>Photoshop</b><small>Image editing and compositing</small></span></li>
+                        <li data-use="3,4"><img src="assets/tools/Adobe_After_Effects_CC_icon.svg" alt=""><span><b>After Effects</b><small>Motion graphics</small></span></li>
+                        <li data-use="3"><img src="assets/tools/Logo_Blender.svg" alt=""><span><b>Blender</b><small>3D and rendering</small></span></li>
+                        <li data-use="3"><img src="assets/tools/Autodesk_Maya_logo.svg" alt=""><span><b>Autodesk Maya</b><small>3D modelling and animation</small></span></li>
+                        <li data-use="3,5"><img src="assets/tools/Matterport.svg" alt=""><span><b>Matterport</b><small>3D scanning and virtual tours</small></span></li>
+                        <li data-use="4,5"><img src="assets/tools/Adobe_Premiere_Pro_CC_icon.svg" alt=""><span><b>Premiere Pro</b><small>Editing and delivery</small></span></li>
+                        <li data-use="1,3"><img src="assets/tools/ChatGPT-Logo.svg" alt=""><span><b>ChatGPT</b><small>AI-assisted workflows</small></span></li>
+                        <li data-use="1,2"><img src="assets/tools/Claude_AI_logo.svg" alt=""><span><b>Claude</b><small>Ideation and prototyping</small></span></li>
+                        <li data-use="3,4"><img src="assets/tools/Google_Antigravity_Logo.svg" alt=""><span><b>Antigravity</b><small>AI-assisted web development</small></span></li>
+                        <li data-use="2,5"><img src="assets/tools/Microsoft_Office_PowerPoint_(2025–present).svg" alt=""><span><b>PowerPoint</b><small>Pitch decks and presentations</small></span></li>
+                        <li data-use="3"><img src="assets/tools/Magnific_logo.svg" alt=""><span><b>Magnific AI</b><small>Image enhancement</small></span></li>
+                        <li class="flow-tools-group">Basic</li>
+                        <li data-use="1,2"><img src="assets/tools/Figma_Symbol.svg" alt=""><span><b>Figma <em>Basic</em></b><small>Layout and interfaces</small></span></li>
+                        <li data-use="3"><img src="assets/tools/Unreal_Engine_Logo_(new_typeface).svg" alt=""><span><b>Unreal Engine <em>Basic</em></b><small>Real-time visualization</small></span></li>
+                        <li data-use="3,5"><img src="assets/tools/Wix.svg" alt=""><span><b>Wix <em>Basic</em></b><small>Website building</small></span></li>
+                      </ul>
+                      <div class="flow-status"><span><b></b> IN USE</span><span id="active-step">EXPLORE</span></div>
+                    </aside>
+                    <div class="flow-scroll" id="flow-scroll" tabindex="0" aria-label="Creative workflow, scroll horizontally to explore">
+                      <div class="flow-track" id="flow-track"></div>
+                    </div>
+                  </div>
+                  <div class="flow-controls">
+                    <button class="circle" id="flow-back" type="button" aria-label="Previous workflow stage">←</button>
+                    <div class="flow-progress" id="flow-progress" role="group" aria-label="Workflow stages"></div>
+                    <button class="circle" id="flow-next" type="button" aria-label="Next workflow stage">→</button>
+                  </div>
+                  <div class="flow-meter" aria-hidden="true"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="process-space" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="about section-width" id="about" aria-labelledby="about-title">
+      <div class="badge-wrap">
+        <div class="badge-swing">
+          <div class="lanyard" aria-hidden="true"><span>GRAPHIC DESIGN · MOTION · 3D</span></div>
+          <div class="badge">
+            <div class="badge-faces">
+              <div class="badge-face badge-front">
+                <span class="badge-slot" aria-hidden="true"></span>
+                <div class="badge-top"><b>aniket<span>.</span></b><span>DESIGNER PASS</span></div>
+                <img src="assets/portrait.webp" alt="Portrait of Aniket Chauhan" width="720" height="695" loading="lazy" draggable="false">
+                <strong>Aniket Chauhan</strong>
+                <small>Graphic Designer · 3D Artist · AI Creator</small>
+                <div class="badge-bottom"><span>DOMBIVLI, MUMBAI<br>DESIGN · MOTION · 3D</span><i aria-hidden="true"></i></div>
+              </div>
+              <div class="badge-face badge-back" aria-hidden="true">
+                <span class="badge-slot" aria-hidden="true"></span>
+                <div class="badge-back-name"><b>aniket<span>.</span></b><strong>Multidisciplinary Creative</strong></div>
+                <div class="badge-back-skills">GRAPHIC DESIGN<br>MOTION GRAPHICS<br>3D &amp; ARCHITECTURE<br>AI-ASSISTED DESIGN</div>
+              </div>
+            </div>
+            <span class="badge-ring" aria-hidden="true"></span>
+            <button class="badge-flip" type="button" aria-label="Show reverse of Aniket’s designer pass" aria-pressed="false" title="Click to flip · Drag to stretch"></button>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="section-head"><h2 id="about-title">About me</h2><p>I’m Aniket Chauhan, a multidisciplinary creative from Dombivli, Mumbai. I started out freelancing for about a year and joined ShyftX in May 2025. My work spans print, cinematography, 3D and AI-assisted production.</p></div>
+        <dl class="profile-facts">
+          <div><dt>Age</dt><dd>23</dd></div>
+          <div><dt>Work experience</dt><dd>2+ years</dd></div>
+          <div><dt>Software &amp; tools</dt><dd>15</dd></div>
+          <div><dt>AI tools</dt><dd>4 of 15</dd></div>
+        </dl>
+        <div class="card-stack" id="card-stack" aria-label="About me cards">
+          <article class="bio-card" data-depth="0">
+            <div class="card-meta"><span>ABOUT ME</span><span>01 / 07</span></div>
+            <h3>One practice, many mediums.</h3>
+            <p>At ShyftX, I design marketing materials, shoot and edit walkthroughs, and help build virtual experiences for architecture. My personal projects give me room to experiment with 3D, motion and AI.</p>
+            <div class="tags"><span>Graphic design</span><span>3D</span><span>Motion</span></div>
+          </article>
+        </div>
+        <div class="card-controls"><button class="circle" id="card-back" type="button" aria-label="Previous card">←</button><output id="card-count">01 / 07</output><button class="circle" id="card-next" type="button" aria-label="Next card">→<svg class="card-progress" viewBox="0 0 62 62" aria-hidden="true"><circle cx="31" cy="31" r="29" pathLength="1"/></svg></button></div>
+        <div class="card-hint"><button class="pill secondary" id="card-pause" type="button" aria-label="Pause card slideshow" aria-pressed="false">Ⅱ Pause</button><span>Tap, swipe or use the arrows</span></div>
+      </div>
+    </section>
+
+    <section class="skills section-width" id="skills" aria-labelledby="skills-title">
+      <div class="section-head"><h2 id="skills-title">Skills</h2></div>
+      <div class="skills-showcase">
+        <div class="skills-index">
+          <details class="skill-row" name="skill-discipline" data-discipline="design" open>
+            <summary>Graphic Design <span aria-hidden="true"></span></summary>
+            <ul><li>Brochure design</li><li>Pitch deck design</li><li>Poster design</li><li>Flyer design</li><li>Newsletter design</li></ul>
+          </details>
+          <details class="skill-row" name="skill-discipline" data-discipline="motion">
+            <summary>Video &amp; Motion <span aria-hidden="true"></span></summary>
+            <ul><li>Video editing</li><li>Motion graphics</li><li>Cinematography</li><li>Photography</li></ul>
+          </details>
+          <details class="skill-row" name="skill-discipline" data-discipline="spatial">
+            <summary>3D &amp; Architecture <span aria-hidden="true"></span></summary>
+            <ul><li>3D environment design</li><li>Lighting &amp; rendering</li><li>Architectural walkthroughs</li><li>Virtual tours</li></ul>
+          </details>
+          <details class="skill-row" name="skill-discipline" data-discipline="generative">
+            <summary>AI &amp; Generative <span aria-hidden="true"></span></summary>
+            <ul><li>AI image &amp; video generation</li><li>AI-assisted website development</li><li>AI-assisted app development</li></ul>
+          </details>
+        </div>
+        <div class="skill-stage" aria-hidden="true">
+          <div class="skill-scene skill-design">
+            <div class="skill-print-cover"><b>Form<br>&amp; Field</b><span></span></div>
+            <div class="skill-print-insert"><div></div><div><b>Form &amp; Field</b><i></i><i></i><i></i><i></i></div></div>
+          </div>
+          <div class="skill-scene skill-motion">
+            <div class="skill-monitor"><img src="assets/projects/skywards.webp" alt="" loading="lazy" decoding="async"><span></span></div>
+            <div class="skill-edit"><div></div><div></div><span></span></div>
+          </div>
+          <div class="skill-scene skill-spatial">
+            <div class="skill-render"><img src="assets/projects/showreel.webp" alt="" loading="lazy" decoding="async"></div>
+            <div class="skill-mesh"><i></i><i></i><i></i></div>
+          </div>
+          <div class="skill-scene skill-generative">
+            <img src="assets/projects/generative-study.webp" alt="" width="1440" height="810" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience" aria-labelledby="experience-title">
+      <canvas class="experience-stars" aria-hidden="true"></canvas>
+      <div class="section-width">
+        <div class="section-head"><h2 id="experience-title">Experience</h2><p>Professional design work, collaborative film and the education behind my practice.</p></div>
+        <div class="timeline">
+          <span class="timeline-trace" aria-hidden="true"></span>
+          <span class="timeline-comet" aria-hidden="true"><i class="comet-filaments"></i><i class="comet-head"></i></span>
+          <section class="timeline-group timeline-work" aria-labelledby="timeline-work-title">
+            <h3 class="timeline-group-title" id="timeline-work-title">Work &amp; projects</h3>
+            <article class="timeline-entry">
+              <div class="timeline-date"><b>May 2025 – Present</b><span>Juinagar, Navi Mumbai</span></div><i aria-hidden="true">✦</i>
+              <div class="experience-card"><small>SHYFTX · PROFESSIONAL EXPERIENCE</small><h4>Graphic Designer</h4><p>Designing for brands, marketing and immersive architectural experiences.</p><ul><li>Design brochures, flyers, newsletters and other marketing materials.</li><li>Create walkthrough videos, shoot photography and edit imagery.</li><li>Work on 3D scanning, virtual tours and the interactive Arcos platform.</li><li>Collaborate across teams and use AI tools in production.</li></ul></div>
+            </article>
+            <article class="timeline-entry">
+              <div class="timeline-date"><b>2023</b><span>International MAAC 24FPS</span></div><i aria-hidden="true">✦</i>
+              <div class="experience-card"><small>MAAC 24FPS · COLLABORATIVE FILM</small><h4>Skywards</h4><p>Our collaborative 3D animation film was nominated at International MAAC 24FPS 2023 and earned a silver medal in MAAC Motion Graphic.</p><a href="https://www.youtube.com/watch?v=-2SLLWH7QMI&t=22s" target="_blank" rel="noopener">Watch Skywards ↗</a></div>
+            </article>
+          </section>
+          <section class="timeline-group timeline-education" aria-labelledby="timeline-education-title">
+            <h3 class="timeline-group-title" id="timeline-education-title">Education</h3>
+            <article class="timeline-entry">
+              <div class="timeline-date"><b>2021 – 2024</b><span>Maya Academy of Advanced Cinematics</span></div><i aria-hidden="true">✦</i>
+              <div class="experience-card"><small>MAAC · EDUCATION</small><h4>ADVFX Plus</h4><p>Studied animation and visual effects at the Maya Academy of Advanced Cinematics.</p><div class="tags"><span>3D animation</span><span>Visual effects</span></div></div>
+            </article>
+            <article class="timeline-entry">
+              <div class="timeline-date"><b>2022 – 2025</b><span>Model College</span></div><i aria-hidden="true">✦</i>
+              <div class="experience-card"><small>MODEL COLLEGE · EDUCATION</small><h4>Multimedia and Mass Communication</h4><p>Bachelor of Arts in Multimedia and Mass Communication (BAMMC).</p><div class="tags"><span>Multimedia</span><span>Mass communication</span></div></div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <canvas class="contact-sky" aria-hidden="true"></canvas>
+      <canvas class="contact-meteors" aria-hidden="true"></canvas>
+      <div class="contact-content">
+        <h2 id="contact-title">Got an idea<br>worth <em>making?</em></h2>
+        <p>Tell me what you’re working on. I’d love to hear how design, motion or 3D could help bring it to life.</p>
+        <div class="actions contact-actions">
+          <div class="contact-choices">
+            <button class="pill primary" id="contact-toggle" type="button" aria-controls="contact-menu" aria-expanded="false">Start a conversation <span aria-hidden="true">↓</span></button>
+            <div class="contact-menu" id="contact-menu" hidden>
+              <button type="button" id="copy-email"><span aria-hidden="true">▢</span><b>Copy email<small>annivisuals@gmail.com</small></b></button>
+              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=annivisuals%40gmail.com" target="_blank" rel="noopener"><span aria-hidden="true">✉</span><b>Open in Gmail<small>New message in your browser</small></b></a>
+              <a href="mailto:annivisuals@gmail.com"><span aria-hidden="true">→</span><b>Open mail app<small>Outlook, Apple Mail and others</small></b></a>
+              <a href="https://www.linkedin.com/in/aniket-chauhan-6a406416b" target="_blank" rel="noopener"><span aria-hidden="true">in</span><b>Message on LinkedIn<small>Opens my profile</small></b></a>
+              <span class="visually-hidden" id="copy-status" role="status"></span>
+            </div>
+          </div>
+          <a class="pill secondary" href="assets/Aniket-Chauhan-Resume.pdf" download>Download résumé</a>
+        </div>
+        <a class="contact-email" href="mailto:annivisuals@gmail.com">annivisuals@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section-width">
+      <div class="footer-top">
+        <div><a class="wordmark" href="#top">aniket<span>.</span></a><p>Graphic designer, 3D artist, cinematographer and AI creator based in Dombivli, Mumbai.</p><a class="footer-email" href="mailto:annivisuals@gmail.com">annivisuals@gmail.com</a></div>
+        <nav aria-label="Footer"><span>Navigate</span><a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+        <div class="footer-social"><span>Elsewhere</span><a href="https://www.linkedin.com/in/aniket-chauhan-6a406416b" target="_blank" rel="noopener">LinkedIn ↗</a><a href="assets/Aniket-Chauhan-Resume.pdf" download>Résumé ↗</a></div>
+      </div>
+      <div class="footer-name" aria-hidden="true">Aniket</div>
+      <div class="footer-bottom"><small>© 2026 Aniket Chauhan. All rights reserved.</small><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <dialog class="mobile-drawer" id="main-menu" aria-label="Menu">
+    <div class="drawer-content">
+      <div class="drawer-head"><a class="wordmark" href="#top">aniket<span>.</span></a><button class="circle drawer-close" type="button" aria-label="Close menu">×</button></div>
+      <nav aria-label="Mobile">
+        <a href="#work">Work <span aria-hidden="true">→</span></a><a href="#process">Process <span aria-hidden="true">→</span></a><a href="#about">About <span aria-hidden="true">→</span></a><a href="#skills">Skills <span aria-hidden="true">→</span></a><a href="#experience">Experience <span aria-hidden="true">→</span></a><a href="#contact">Contact <span aria-hidden="true">→</span></a>
+      </nav>
+      <div class="drawer-footer"><a class="pill primary" href="#contact">Say hello <span aria-hidden="true">→</span></a><a href="mailto:annivisuals@gmail.com">annivisuals@gmail.com</a><a href="https://www.linkedin.com/in/aniket-chauhan-6a406416b" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+    </div>
+  </dialog>
+</body>
+</html>
